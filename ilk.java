@@ -6,7 +6,7 @@ public class ilk {
     public static void main(String[] args) {
          // UCAK BİLETİ FİYATI HESAPLAMA
          Scanner input = new Scanner(System.in);
-       System.out.println("Enter the distance you will travel in km : ");
+         System.out.println("Enter the distance you will travel in km : ");
          double mesafe = input.nextDouble();
           
           System.out.println("enter your age : ");
@@ -14,12 +14,13 @@ public class ilk {
         
          System.out.println("Select travel type: (1: one way, 2: round trip))");
           System.out.println("Make your choice : ( 1 or 2 )");
-          // int secim;
-          int secim = input.nextInt(); // kullanıcıdan giris aldım
+     
+         
+          int secim = input.nextInt(); 
           
           if (mesafe <= 0 || yas <= 0 || (secim != 1 && secim != 2)) {
           System.out.println("ınvalid data entered!");
-         return; // programı sonlandır hata oldugu icin
+         return; 
           }
           
           double toplamFiyat = mesafe * 0.10;
